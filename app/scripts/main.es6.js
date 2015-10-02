@@ -1,12 +1,14 @@
 class Osoba {
     @readonly
-    name = "Kasia";
+    name = 'Kasia';
 }
 
-function readonly() {
-    console.log.apply(console, arguments);
+function readonly(target, name, descriptor) {
+    descriptor.writable = false;
 }
 
 let o = new Osoba();
+console.log(o.name);
 
-console.log(o);
+o.name = 'Basia'; // TypeError: Cannot assign to read only property 'name' of #<Osoba>
+console.log(o.name);
