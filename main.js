@@ -1,10 +1,15 @@
+'use strict';
+
 class Person {
-    @readonly
+    @readonly()
     name = 'Kasia';
 }
 
-function readonly(target, name, descriptor) {
-    descriptor.writable = false;
+function readonly() {
+    return function (target, propertyName, descriptor) {
+        descriptor.writable = false;
+        return descriptor;
+    };
 }
 
 let o = new Person();
