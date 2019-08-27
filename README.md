@@ -1,6 +1,6 @@
 # test-es7-decorators
 
-> Testing ECMAScript 7 Decorators. Currently status: Stage 1
+Testing ECMAScript 7 Decorators. Currently status: Stage 2
 
 ```js
 class Person {
