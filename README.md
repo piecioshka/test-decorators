@@ -1,6 +1,6 @@
-# test-es7-decorators
+# test-decorators
 
-Testing ECMAScript 7 Decorators. Currently status: Stage 2
+Testing ECMAScript Decorators. Currently status: **Stage 2**
 
 ```js
 class Person {
@@ -32,5 +32,5 @@ Next, open in browser `app/index.html`.
 
 ## Links
 
- - More about specification: https://github.com/wycats/javascript-decorators
+ - More about specification: https://github.com/tc39/proposal-decorators
  - Babel.js: Experimental section: https://babeljs.io/docs/usage/experimental/
