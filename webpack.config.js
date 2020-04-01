@@ -1,18 +1,28 @@
+const path = require('path');
+
 module.exports = {
-    resolve: {
-        extensions: ['.es6.js', '.js', '']
+    mode: 'development',
+    entry: {
+        'class-property-decorator': path.join(__dirname, 'src', 'class-property-decorator', 'scripts', 'main')
     },
-    entry: './app/scripts/main',
     output: {
         filename: 'bundle.js',
-        path: 'app/dist'
+        path: path.join(__dirname, 'dist', 'class-property-decorator')
     },
     module: {
-        loaders: [
+        rules: [
             {
-                test: /\.es6\.js/,
+                test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader?stage=0'
+                loader: 'babel-loader'
+            },
+            {
+                test: /\.html$/,
+                exclude: /node_modules/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                },
             }
         ]
     }
