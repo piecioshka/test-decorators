@@ -4,11 +4,11 @@
 
 ## Decorators Types
 
-* [Class Decorator](/blob/master/src/class-decorator/main.js)
-* [Class Property Decorator](/blob/master/src/class-property-decorator/main.js)
-* [Class Method Decorator](/blob/master/src/class-method-decorator/main.js)
-* [Class Method Parameter Decorator](/blob/master/src/class-method-parameter-decorator/main.js)
-* [Class Accessor Decorator](/blob/master/src/class-accessor-decorator/main.js)
+* [Class Decorator](/src/class-decorator/main.js)
+* [Class Property Decorator](/src/class-property-decorator/main.js)
+* [Class Method Decorator](/src/class-method-decorator/main.js)
+* [Class Method Parameter Decorator](/src/class-method-parameter-decorator/main.js)
+* [Class Accessor Decorator](/src/class-accessor-decorator/main.js)
 
 ## Resources
 
