@@ -1,25 +1,14 @@
 # test-decorators
 
-Testing ECMAScript Decorators. Currently status: **Stage 2**
+:ledger: Testing ECMAScript Decorators. Currently status: **Stage 2**
 
-## Class Property Decorator
+## Decorators Types
 
-```js
-function readonly(target, name, descriptor) {
-    descriptor.writable = false;
-}
-
-class Person {
-    @readonly
-    name = 'Kasia';
-}
-
-let o = new Person();
-console.log(o.name); // 'Kasia'
-
-o.name = 'Basia'; // TypeError: Cannot assign to read only property 'name' of #<Person>
-console.log(o.name); // 'Kasia'
-```
+* [Class Decorator](/blob/master/src/class-decorator/main.js)
+* [Class Property Decorator](/blob/master/src/class-property-decorator/main.js)
+* [Class Method Decorator](/blob/master/src/class-method-decorator/main.js)
+* [Class Method Parameter Decorator](/blob/master/src/class-method-parameter-decorator/main.js)
+* [Class Accessor Decorator](/blob/master/src/class-accessor-decorator/main.js)
 
 ## Resources
 

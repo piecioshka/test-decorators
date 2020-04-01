@@ -1,4 +1,4 @@
-import '../index.html';
+import './index.html';
 
 function readonly(target, name, descriptor) {
     descriptor.writable = false;
@@ -9,7 +9,7 @@ class Person {
   name = 'Kasia';
 }
 
-let o = new Person();
+const o = new Person();
 console.log(o.name); // 'Kasia'
 
 o.name = 'Basia'; // TypeError: Cannot assign to read only property 'name' of #<Person>
