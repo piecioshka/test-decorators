@@ -1,6 +1,7 @@
 {
     "private": true,
     "name": "test-decorators",
+    "license": "MIT",
     "scripts": {
         "build": "webpack",
         "dev": "webpack-dev-server"
