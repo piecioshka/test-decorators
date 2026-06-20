@@ -14,3 +14,7 @@
 
 * <https://github.com/tc39/proposal-decorators> — Proposal
 * <https://babeljs.io/docs/en/babel-plugin-proposal-decorators> — Babel.js plugin
+
+## License
+
+[The MIT License](http://piecioshka.mit-license.org) @ 2026
